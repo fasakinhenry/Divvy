@@ -7,44 +7,47 @@ const Navbar = () => {
   return (
     <header className='bg-[#FFE8E8] py-4'>
       <div className='container mx-auto px-4'>
-        <div className='flex justify-start items-center space-x-8'>
+        <div className='flex justify-between items-center'>
+          {/* Logo */}
           <div className='text-2xl font-medium'>Divvy</div>
 
-          {/* Desktop Navigation */}
-          <nav className='hidden md:flex items-center space-x-8'>
-            <a
-              href='#'
-              className='text-black hover:text-gray-500 transition duration-300 cursor-pointer font-sarabun'
-            >
-              Home Page
-            </a>
-            <a
-              href='#'
-              className='text-black hover:text-gray-500 transition duration-300 cursor-pointer font-sarabun'
-            >
-              About us
-            </a>
-            <a
-              href='#'
-              className='text-black hover:text-gray-500 transition duration-300 cursor-pointer font-sarabun'
-            >
-              Contact Us
-            </a>
-            <a
-              href='#'
-              className='text-black hover:text-gray-500 transition duration-300 cursor-pointer font-sarabun'
-            >
-              More Links
-            </a>
-          </nav>
+          {/* Desktop Navigation and Buttons */}
+          <div className='hidden md:flex items-center justify-between flex-1 ml-8'>
+            <nav className='flex items-center space-x-8'>
+              <a
+                href='#'
+                className='text-black hover:text-gray-500 transition duration-300 cursor-pointer font-sarabun'
+              >
+                Home Page
+              </a>
+              <a
+                href='#'
+                className='text-black hover:text-gray-500 transition duration-300 cursor-pointer font-sarabun'
+              >
+                About us
+              </a>
+              <a
+                href='#'
+                className='text-black hover:text-gray-500 transition duration-300 cursor-pointer font-sarabun'
+              >
+                Contact Us
+              </a>
+              <a
+                href='#'
+                className='text-black hover:text-gray-500 transition duration-300 cursor-pointer font-sarabun'
+              >
+                More Links
+              </a>
+            </nav>
 
-          <div className='hidden md:flex items-center space-x-4 ml-auto'>
-            <Button className='border-2 border-gray-300 text-black bg-transparent rounded-full px-6 transition duration-300 hover:bg-gray-200 cursor-pointer'>
-              Join
-            </Button>
-            <Button className='bg-[#FF8E8E] text-white rounded-full px-6 transition duration-300 hover:bg-[#FF7070] hover:shadow-lg cursor-pointer'>
-              Sign Up
-            </Button>
+            <div className='flex items-center space-x-4 ml-auto'>
+              <Button className='border-2 border-gray-300 text-black bg-transparent rounded-full px-6 transition duration-300 hover:bg-gray-200 cursor-pointer'>
+                Join
+              </Button>
+              <Button className='bg-[#FF8E8E] text-white rounded-full px-6 transition duration-300 hover:bg-[#FF7070] hover:shadow-lg cursor-pointer'>
+                Sign Up
+              </Button>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
