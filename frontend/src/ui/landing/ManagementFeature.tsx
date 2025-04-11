@@ -1,4 +1,3 @@
-import { Button } from '@/components/ui/button';
 import expenseManagementImage from '@/assets/img/expense-management.jpeg';
 
 const ManagementFeature = () => {
